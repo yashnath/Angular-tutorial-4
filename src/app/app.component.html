@@ -1,0 +1,12 @@
+<br>
+<input type="number" class="i" #tb 
+placeholder="Enter the INR amount to be converted in USD" >
+<br><br> 
+<input type="number" class="i1"placeholder="Enter the current 1 USD Value " #tb1><br><br>
+<button (click)="val(tb.value)">Dynamic</button>
+
+<br><br><br><br>
+<p>
+    {{num|cutopi: tb1.value}}
+</p>
+
